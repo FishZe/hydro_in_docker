@@ -32,6 +32,7 @@ services:
   oj-judge: 
     build: ./judge
     container_name: oj-judge
+    shm_size: '1gb'
     restart: always
     privileged: true
     depends_on:
